@@ -31,3 +31,5 @@ group :test do
   gem "rspec-rails"
   gem "factory_bot_rails"
 end
+
+gem "jsonapi-serializer", "~> 2.2"

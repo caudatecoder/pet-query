@@ -9,13 +9,13 @@
 ## TODO:
 
 * [x] Create models for pets
-* [ ] Create API endpoints:
-  * Store data
-  * Query data
-  * Outside of zone count
-* [ ] Test coverage
+* [x] Create API endpoints:
+  * [x] Store data
+  * [x] Query data
+  * [x] Outside of zone count
+* [x] Test coverage
   * [x] Models
-  * [ ] Requests
+  * [x] Requests
 * [ ] Basic usage documentation here
 
 ## Setup

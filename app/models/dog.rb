@@ -8,4 +8,8 @@ class Dog < Pet
   def attributes
     super.except("lost_tracker")
   end
+
+  def lost_tracker=(_value)
+    # ignoring the value
+  end
 end
