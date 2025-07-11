@@ -40,5 +40,12 @@ module PetQuery
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.after_initialize do
+      if Rails.env.development? && ActiveRecord::Base.connection.adapter_name.downcase.include?("sqlite")
+        # Load the schema into memory after the app starts
+        load Rails.root.join("db/schema.rb")
+      end
+    end
   end
 end
